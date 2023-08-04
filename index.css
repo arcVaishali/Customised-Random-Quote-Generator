@@ -127,7 +127,8 @@ h3 {
     margin: auto 10px;
     border-radius:10px ;
     line-height: 2.5;
-    border: 11px solid white;
+    /* border: 11px solid white; */
+    outline: rgba(255, 255, 255, 0.806) solid 11px;
 }
 
 .val {
@@ -176,4 +177,18 @@ h3 {
     to {
         opacity: 0;
     }
+}
+
+.choiceBtn {
+    display : block ;
+    margin : 15px auto ;
+    text-align : center ;
+    background-color:rgba(250, 0, 0, 0.75) ;
+    border-radius: 5px;
+    padding : 10px ;
+    width : 20% ;
+}
+.choiceBtn a {
+    color : white ;
+    text-decoration: none;
 }
