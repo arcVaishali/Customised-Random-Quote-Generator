@@ -1,8 +1,28 @@
 import { generateTextAndImage } from "./utils.js"
 
+document.getElementById("choiceBtn").addEventListener( "click", myFunction );
+function myFunction() {
+    let name = document.getElementById("name").value;
+    let favoriteActivity = document.getElementById("favactivity").value;
+    let favoritePlace = document.getElementById("favplace").value;
+    let temperature = document.getElementById("random").value;
+
+    const obj = document.querySelector("#inputcontent");
+
+    obj.style.display = "none";
+
+    generateTextAndImage(name, favoriteActivity, favoritePlace, temperature)
+
+    // generateTextAndImage(name, favoriteActivity, favoritePlace, temperature)
+    
+    
+}
+
+
+
 
 // 1. Change the value of the variable to your name
-let name = "Guil Hernandez"
+// let name = "Guil Hernandez"
 
 // 2. Change the value of the variable to your favorite activity
 let favoriteActivity = "kayaking"
@@ -19,3 +39,4 @@ let temperature = 1
 // (remember to use "avatar.jpg" as the name of your photo)
 
 generateTextAndImage(name, favoriteActivity, favoritePlace, temperature)
+
