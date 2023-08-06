@@ -1,21 +1,33 @@
-# Random Quote Generator using Scrimba
+# Customised Random Quote Generator
 
-Quick start:
+## Screenshots
+![Input from User](Frontend-Projects/Customised-quote-generator/SettingInput.jpg)
+![Result](Frontend-Projects/Customised-quote-generator/Result.jpg)
+
+## Demo 
+- [Have a look!](https://arcvaishali.github.io/Customised-Random-Quote-Generator/)
+
+Customised Random Quote Generator takes, 
+
+- Name
+- Favorite Activity 
+- Favorite Place
+- Degree of Randomness (from 0 to 1, higher the degree of randomness less relevant the quote)
+
+And then these inputs are passed in a prompt to AI which generates **Oscar Wilde style poetic qoute** using [OpenAI API by **Scrimba** (a learning platform)](https://apis.scrimba.com/openai/v1/completions) and an **image** relevant to the quote using an [API by Scrimba](https://apis.scrimba.com/unsplash/photos/random)
+
+## Prompt used-
 
 ```
-$ npm install
-$ npm start
-````
+Create a poetic phrase about ${favActivity} and ${favPlace} in the insightful, witty and satirical style of Oscar Wilde. Omit Oscar Wilde's name.
+```
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+## Tech Stack-
+- HTML 
+- CSS
+- JavaScript
+- OpenAI API
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
 Happy Coding!
