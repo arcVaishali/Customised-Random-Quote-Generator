@@ -6,21 +6,25 @@ const quoteSpan = document.querySelector(".quote-span")
 const quoteWrapper = document.querySelector(".quote-wrapper")
 const nameSpan = document.querySelector(".name-span")
 const loader = document.getElementById("loader")
+const obj = document.querySelector("#inputcontent");
+const tryagainBtn = document.querySelector("#tryagain");
+const header = document.querySelector(".header");
 
 function startLoading() {
-  nameSpan.style.display = "none"
-  quoteWrapper.style.display = "none"
   loader.style.display = "block"
-  document.body.backgroundImage = ""
+  obj.style.display = "none" ;
+  header.style.display = "none" ;
 }
 
 function stopLoading(name, url, quote) {
   nameSpan.style.display = "inline"
   quoteWrapper.style.display = "block"
+  quoteSpan.style.display = "inline"
   loader.style.display = "none"
   nameSpan.textContent = `${name} - ${getDate()}`
   document.body.style.backgroundImage = `url(${url})`
   quoteSpan.textContent = quote
+  tryagainBtn.style.display = "block"
 }
 
 export async function generateTextAndImage(
@@ -102,6 +106,7 @@ async function getQuote(favActivity, favPlace, temperature) {
   })
 
   let response = await res.json()
+  console.log(response);
   let newQuote = response.choices[0].text
   localStorage.setItem("quote", newQuote)
   return newQuote
