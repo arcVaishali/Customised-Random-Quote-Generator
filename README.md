@@ -1,8 +1,8 @@
 # Customised Random Quote Generator
 
 ## Screenshots
-![Input from User](Frontend-Projects/Customised-quote-generator/SettingInput.jpg)
-![Result](Frontend-Projects/Customised-quote-generator/Result.jpg)
+![Input from User](SettingInput.jpg)
+![Result](Result.jpg)
 
 ## Demo 
 - [Have a look!](https://arcvaishali.github.io/Customised-Random-Quote-Generator/)
